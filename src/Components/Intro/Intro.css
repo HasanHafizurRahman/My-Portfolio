@@ -12,6 +12,10 @@
     flex-direction: column;
     gap: 2rem;
   }
+  .button-div{
+    display: flex;
+    gap: 1rem;
+  }
   .i-name {
     display: flex;
     flex-direction: column;
@@ -23,7 +27,7 @@
     font-size: 3rem;
   }
   .i-name > :nth-child(2) {
-    color: var(--orange);
+    color: blueviolet;
     font-weight: bold;
     font-size: 3rem;
   }
@@ -34,7 +38,7 @@
     margin-top: 10px;
   }
   .i-button {
-    width: 8rem;
+    width: 12rem;
     height: 3rem;
   }
   .i-icons {
