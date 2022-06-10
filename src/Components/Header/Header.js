@@ -14,6 +14,8 @@ const Header = () => {
          <div className='n-list'>
              <ul>
                  <li>Home</li>
+                 <li>About</li>
+                 <li>Blogs</li>
                  <li>Services</li>
                  <li>Projects</li>
                  <li>Skills</li>
