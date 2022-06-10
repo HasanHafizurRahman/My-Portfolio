@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -21,9 +22,9 @@ const Header = () => {
                  <li>Skills</li>
              </ul>
          </div>
-         <button className='button'>
-                Contact Me
-         </button>
+         <Link to="contact" spy={true} smooth={true}>
+        <button className="button n-button">Contact</button>
+        </Link>
         </div>
       </div>
     );
