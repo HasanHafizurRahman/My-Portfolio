@@ -6,8 +6,20 @@ import Agrobhai from '../../img/Agrobhai1.jpeg'
 import Grocery from '../../img/Grocery1.jpeg'
 import Catering from '../../img/Catering1.jpeg'
 import Bike from '../../img/Bike1.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
+  const navigate = useNavigate()
+  const Agro = () =>{
+    navigate('/agrobhai')
+  }
+  const grocery = () =>{
+    navigate('/grocery')
+  }
+
+  const food = () =>{
+    navigate('/catering')
+  }
     return (
         <div className='portfolio'>
 
@@ -24,15 +36,15 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-        <span>Agro Bhai</span> <button className='button-class'>Details</button>
+        <span>Agro Bhai</span> <button onClick={Agro} className='button-class'>Details</button>
           <img style={{height: '720px', width: '1280px'}} src={Agrobhai} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <span>My Grocery</span> <button className='button-class'>Details</button>
+        <span>My Grocery</span> <button onClick={grocery} className='button-class'>Details</button>
           <img style={{height: '720px', width: '1280px'}} src={Grocery} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <span>Food Catering</span><button className='button-class'>Details</button>
+        <span>Food Catering</span><button onClick={food} className='button-class'>Details</button>
           <img style={{height: '720px', width: '1280px'}} src={Catering} alt="" />
         </SwiperSlide>
         <SwiperSlide>

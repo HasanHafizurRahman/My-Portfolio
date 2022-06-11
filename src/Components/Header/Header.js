@@ -14,9 +14,9 @@ const Header = () => {
         <div className="n-right">
          <div className='n-list'>
              <ul>
-                 <li>Home</li>
+             <Link to='/'><li>Home</li></Link>
                  <li>About</li>
-                 <li>Blogs</li>
+             <Link to='/blog'><li>Blogs</li></Link>
                  <li>Services</li>
                  <li>Projects</li>
                  <li>Skills</li>

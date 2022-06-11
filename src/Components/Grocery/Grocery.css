@@ -1,0 +1,17 @@
+.image-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.details{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+@media only screen and (max-width: 488px){
+    .image-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
