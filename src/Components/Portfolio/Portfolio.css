@@ -4,7 +4,8 @@
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-  
+    margin-top: 150px;
+    margin-bottom: 180px;
   }
   /* heading */
   .portfolio span:nth-of-type(1) {
@@ -38,16 +39,16 @@
     border-radius: 19px;
   }
   .button-class{
-    background: linear-gradient(180deg, #892be277 26.71%, #9744e4 99.36%);
+    background: linear-gradient(180deg, #ecf7fa3a 66.71%, #eaf0ec33 29.36%);
     box-shadow: 0px 20px 24px 3px rgba(145, 133, 196, 0.42);
     border-radius: 34px;
     border: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px 22px 9px 22px;
-    width: 7rem;
+    color: rgb(93, 12, 223);
+    font-size: 12px;
+    padding: 3px 15px 5px 15px;
+    width: 6rem;
     height: 2rem;
-    margin-left: 50px;
+    margin-left: 5px;
     margin-bottom: 10px;
   }
   .button-class:hover{
@@ -55,4 +56,12 @@
     cursor: pointer;
     border: 1px solid var(--orange);
     color: var(--orange);
+  }
+  .slide{
+    height: '650px';
+     width: '1880px'
+  }
+  .project-title{
+    font-size: 1.25rem;
+    padding-left: 5px;
   }

@@ -8,22 +8,8 @@ const Home = () => {
     return (
         <div>
     <Intro />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
       <Portfolio />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Services />
       <Contact />
         </div>

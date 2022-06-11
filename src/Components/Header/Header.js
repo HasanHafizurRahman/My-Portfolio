@@ -15,11 +15,11 @@ const Header = () => {
          <div className='n-list'>
              <ul>
              <Link to='/'><li>Home</li></Link>
-                 <li>About</li>
+             <Link to='/about'><li>About</li></Link>
              <Link to='/blog'><li>Blogs</li></Link>
-                 <li>Services</li>
-                 <li>Projects</li>
-                 <li>Skills</li>
+             <Link to='/service'><li>Services</li></Link>
+             <Link to='/portfolio'><li>Projects</li></Link>
+             <Link to='/skills'><li>Skills</li></Link>
              </ul>
          </div>
          <Link to="contact" spy={true} smooth={true}>

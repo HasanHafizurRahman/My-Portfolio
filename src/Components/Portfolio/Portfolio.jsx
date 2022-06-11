@@ -36,20 +36,20 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-        <span>Agro Bhai</span> <button onClick={Agro} className='button-class'>Details</button>
-          <img style={{height: '720px', width: '1280px'}} src={Agrobhai} alt="" />
+        <h1 className='project-title'>Agro Bhai</h1><button onClick={Agro} className='button-class'>Details</button>
+          <img style={{height: '450px', width: '480px'}} src={Agrobhai} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <span>My Grocery</span> <button onClick={grocery} className='button-class'>Details</button>
-          <img style={{height: '720px', width: '1280px'}} src={Grocery} alt="" />
+        <h1 className='project-title'>My Grocery</h1><button onClick={grocery} className='button-class'>Details</button>
+          <img style={{height: '450px', width: '480px'}} src={Grocery} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <span>Food Catering</span><button onClick={food} className='button-class'>Details</button>
-          <img style={{height: '720px', width: '1280px'}} src={Catering} alt="" />
+        <h1 className='project-title'>Catering</h1><button onClick={food} className='button-class'>Details</button>
+          <img style={{height: '450px', width: '480px'}} src={Catering} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <span>Bike House</span><button className='button-class'>Details</button>
-          <img style={{height: '720px', width: '1280px'}} src={Bike} alt="" />
+        <h1 className='project-title'>Bike House</h1><button className='button-class'>Details</button>
+          <img style={{height: '450px', width: '480px'}} src={Bike} alt="" />
         </SwiperSlide>
       </Swiper>
         </div>
