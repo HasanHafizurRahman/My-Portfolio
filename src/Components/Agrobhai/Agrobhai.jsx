@@ -15,7 +15,7 @@ const Agrobhai = () => {
             <img style={{height: '300px', width:'300px'}} src={Agrobhai3} alt="" />
         </div>
         <a style={{color: 'blue', fontSize: '20px'}} href='https://agro-bhai.web.app'>Live Site</a >
-<span className='details'>
+<div className='details'>
 <ol>
 <li>'Agro Bhai' is a single page full stack agro tools manufacturing website.</li>
 <li>In the home component , User can see few nav items except fews protected navs.</li>
@@ -26,7 +26,7 @@ user has logged in then he/she will be able see and use those protected nav item
 <li>Reactjs</li> <li>Tailwind Css</li> <li>Daisy UI</li> <li>React-Router</li> <li>React-Firebase-hooks</li> <li>ExpressJs,
 </li> <li>MongoDB</li> <li>Google Map</li>
 </ol>
-</span>
+</div>
         </div>
     );
 };

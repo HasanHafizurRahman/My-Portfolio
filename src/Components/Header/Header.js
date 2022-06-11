@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css'
 import { Link } from "react-router-dom";
+import Toggol from '../Toggle/Toggol';
 
 const Header = () => {
     return (
@@ -8,18 +9,18 @@ const Header = () => {
         {/* left */}
         <div className="n-left">
           <div className="n-name">HASAN</div>
-          <span>toggle</span>
+          <Toggol />
         </div>
         {/* right */}
         <div className="n-right">
          <div className='n-list'>
              <ul>
              <Link to='/'><li>Home</li></Link>
-             <Link to='/about'><li>About</li></Link>
+             {/* <Link to='/about'><li>About</li></Link> */}
              <Link to='/blog'><li>Blogs</li></Link>
              <Link to='/service'><li>Services</li></Link>
              <Link to='/portfolio'><li>Projects</li></Link>
-             <Link to='/skills'><li>Skills</li></Link>
+             {/* <Link to='/skills'><li>Skills</li></Link> */}
              </ul>
          </div>
          <Link to="contact" spy={true} smooth={true}>
