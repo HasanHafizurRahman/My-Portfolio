@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import './Services.css';
-import Glass from '../../img/glasses.png'
-import heart from '../../img/heartemoji.png'
-import Humble from '../../img/humble.png'
+import tailwind from '../../img/tailwind.png'
+import react from '../../img/react.png'
+import mongodb from '../../img/mongodb.png'
 import Card from '../Card/Card';
 import { motion } from "framer-motion";
 
@@ -33,12 +33,12 @@ const Services = () => {
             {/* right side */}
             <div className='cards'>
             <motion.div
-            initial={{left: '20%'}}
-            whileInView={{left: '18rem'}}
+            initial={{left: '24%'}}
+            whileInView={{left: '14rem'}}
             transition={transition}
             style={{left: '24rem'}}>
             <Card
-            emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
+            emoji={tailwind}
             heading={"Design"}
             detail={"Html, Css, Bootstrap, Tailwind Css"}
           />
@@ -49,7 +49,7 @@ const Services = () => {
             transition={transition}
              style={{ top: '12rem', left: '-4rem' }}>
               <Card
-              emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+              emoji={react}
               heading={"Front End"}
               detail={"ReactJs,Daisy UI,React-bootstrap, React-Router"}
               />
@@ -60,7 +60,7 @@ const Services = () => {
             transition={transition}
              style={{ top: '22rem', left: '11rem' }}>
               <Card
-              emoji="https://static.cdnlogo.com/logos/m/30/mongodb-icon.svg"
+              emoji={mongodb}
               heading={"Back End"}
               detail={"NodeJs, ExpressJs, MongoDB"}
               />
