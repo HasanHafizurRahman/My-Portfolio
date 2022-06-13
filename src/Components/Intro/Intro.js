@@ -11,8 +11,11 @@ import Crown from '../../img/crown.png'
 import glassesemoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import Resume from './Resume.pdf'
+import { motion } from "framer-motion";
 
 const Intro = () => {
+
+    const transition = {duration: 2, type: 'spring'}
     return (
         <div className='Intro'>
             <div className='i-left'>
@@ -39,13 +42,26 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img style={{ height: '340px', width: '240px', marginLeft: '-40px', marginTop: '-30px' }} src={Shanto} alt="" />
-                <img style={{height: '255px', width: '234px'}} src="http://eduhump.com/syllabus_pics/mern2.png" alt="" />
-            <div style={{top: '-4%', left: '68%'}}>
+                <motion.img
+                initial={{left: '-4%'}}
+                whileInView={{left: '-30%'}}
+                transition={transition}
+
+                style={{height: '255px', width: '234px'}} src="http://eduhump.com/syllabus_pics/mern2.png" alt="" />
+            <motion.div
+            initial={{top: '-4%', left: '74%'}}
+            whileInView={{left: '68%'}}
+            transition={transition}
+            style={{top: '-4%', left: '68%'}}>
                 <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
-            </div>
-            <div style={{top: '22rem', left: '0rem'}}>
+            </motion.div>
+            <motion.div
+            initial={{top: '19rem', left: '9rem'}}
+            whileInView={{left: '0rem'}}
+            transition={transition}
+            style={{top: '22rem', left: '0rem'}}>
                 <FloatingDiv image={Thumbsup} txt1='Enthusiast' txt2='Coder' />
-            </div>
+            </motion.div>
             {/* blur div  */}
             <div className='blur' style={{background: "rgb(238 210 255)"}}></div>
             <div className='blur' style={{

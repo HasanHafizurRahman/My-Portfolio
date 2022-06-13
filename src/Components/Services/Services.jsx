@@ -4,6 +4,7 @@ import Glass from '../../img/glasses.png'
 import heart from '../../img/heartemoji.png'
 import Humble from '../../img/humble.png'
 import Card from '../Card/Card';
+import { motion } from "framer-motion";
 
 const Services = () => {
     // context
@@ -11,10 +12,7 @@ const Services = () => {
   // const darkMode = theme.state.darkMode;
 
   // transition
-  const transition = {
-    duration: 1,
-    type: "spring",
-  };
+  const transition = {duration: 5, type: 'spring'}
     return (
         <div className="services" id="services">
 
@@ -34,27 +32,39 @@ const Services = () => {
             </div>
             {/* right side */}
             <div className='cards'>
-            <div style={{left: '24rem'}}>
+            <motion.div
+            initial={{left: '20%'}}
+            whileInView={{left: '18rem'}}
+            transition={transition}
+            style={{left: '24rem'}}>
             <Card
             emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
             heading={"Design"}
             detail={"Html, Css, Bootstrap, Tailwind Css"}
           />
-            </div>
-            <div style={{ top: '12rem', left: '-4rem' }}>
+            </motion.div>
+            <motion.div
+            initial={{left: '28%'}}
+            whileInView={{left: '10rem'}}
+            transition={transition}
+             style={{ top: '12rem', left: '-4rem' }}>
               <Card
               emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
               heading={"Front End"}
               detail={"ReactJs,Daisy UI,React-bootstrap, React-Router"}
               />
-            </div>
-            <div style={{ top: '22rem', left: '11rem' }}>
+            </motion.div>
+            <motion.div
+            initial={{left: '24%'}}
+            whileInView={{left: '24rem'}}
+            transition={transition}
+             style={{ top: '22rem', left: '11rem' }}>
               <Card
-              emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
+              emoji="https://static.cdnlogo.com/logos/m/30/mongodb-icon.svg"
               heading={"Back End"}
               detail={"NodeJs, ExpressJs, MongoDB"}
               />
-            </div>
+            </motion.div>
             <div className="blur s-blur2" style={{ background: 'rgba(255, 166, 0, 0.221)'}}></div>
             </div>
         </div>
