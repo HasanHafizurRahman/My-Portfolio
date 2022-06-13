@@ -39,7 +39,7 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img style={{ height: '340px', width: '240px', marginLeft: '-40px', marginTop: '-30px' }} src={Shanto} alt="" />
-                <img src={glassesemoji} alt="" />
+                <img style={{height: '255px', width: '234px'}} src="http://eduhump.com/syllabus_pics/mern2.png" alt="" />
             <div style={{top: '-4%', left: '68%'}}>
                 <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
             </div>

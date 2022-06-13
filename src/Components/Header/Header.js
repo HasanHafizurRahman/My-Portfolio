@@ -9,7 +9,7 @@ const Header = () => {
         {/* left */}
         <div className="n-left">
           <div className="n-name">HASAN</div>
-          <Toggol />
+          {/* <Toggol /> */}
         </div>
         {/* right */}
         <div className="n-right">

@@ -36,21 +36,21 @@ const Services = () => {
             <div className='cards'>
             <div style={{left: '24rem'}}>
             <Card
-            emoji={heart}
+            emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
             heading={"Design"}
             detail={"Html, Css, Bootstrap, Tailwind Css"}
           />
             </div>
             <div style={{ top: '12rem', left: '-4rem' }}>
               <Card
-              emoji={Glass}
+              emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
               heading={"Front End"}
               detail={"ReactJs,Daisy UI,React-bootstrap, React-Router"}
               />
             </div>
             <div style={{ top: '22rem', left: '11rem' }}>
               <Card
-              emoji={Humble}
+              emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
               heading={"Back End"}
               detail={"NodeJs, ExpressJs, MongoDB"}
               />
